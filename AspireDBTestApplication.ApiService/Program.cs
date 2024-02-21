@@ -1,12 +1,22 @@
+using AspireDBTestApplication.PeopleDB;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add service defaults & Aspire components.
 builder.AddServiceDefaults();
 
+builder.AddSqlServerDbContext<PeopleDbContext>("sql");
+
 // Add services to the container.
+builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddProblemDetails();
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+app.UseSwagger();
+app.UseSwaggerUI();
 
 // Configure the HTTP request pipeline.
 app.UseExceptionHandler();
@@ -27,6 +37,13 @@ app.MapGet("/weatherforecast", () =>
         ))
         .ToArray();
     return forecast;
+});
+
+app.MapGet("/getpeople", async (PeopleDbContext mydbContext) =>
+{
+    await mydbContext.People.LoadAsync();
+    var items = mydbContext.People.Local.ToArray();
+    return items;
 });
 
 app.MapDefaultEndpoints();

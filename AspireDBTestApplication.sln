@@ -2,13 +2,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34607.79
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspireDBTestApplication.AppHost", "AspireDBTestApplication.AppHost\AspireDBTestApplication.AppHost.csproj", "{3639B2B8-5DC7-44B8-B8F3-A5FF0B227DC4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspireDBTestApplication.AppHost", "AspireDBTestApplication.AppHost\AspireDBTestApplication.AppHost.csproj", "{3639B2B8-5DC7-44B8-B8F3-A5FF0B227DC4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspireDBTestApplication.ServiceDefaults", "AspireDBTestApplication.ServiceDefaults\AspireDBTestApplication.ServiceDefaults.csproj", "{60622DB0-B62B-479E-8DDB-CF669CD36618}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspireDBTestApplication.ApiService", "AspireDBTestApplication.ApiService\AspireDBTestApplication.ApiService.csproj", "{D357FB86-43F6-4B46-B2F0-93F50752EFAF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspireDBTestApplication.Web", "AspireDBTestApplication.Web\AspireDBTestApplication.Web.csproj", "{960E7518-CFC5-4B2C-8FBD-E1271460F16B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspireDBTestApplication.PeopleDB", "AspireDBTestApplication.PeopleDB\AspireDBTestApplication.PeopleDB.csproj", "{424569E1-41D7-4D08-B8A6-11D6A1FD595F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspireDBTestApplication.PeopleDbManager", "AspireDBTestApplication.PeopleDbManager\AspireDBTestApplication.PeopleDbManager.csproj", "{B28D2B31-98A8-4B3C-BF78-A8571DECF235}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +36,14 @@ Global
 		{960E7518-CFC5-4B2C-8FBD-E1271460F16B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{960E7518-CFC5-4B2C-8FBD-E1271460F16B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{960E7518-CFC5-4B2C-8FBD-E1271460F16B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{424569E1-41D7-4D08-B8A6-11D6A1FD595F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{424569E1-41D7-4D08-B8A6-11D6A1FD595F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{424569E1-41D7-4D08-B8A6-11D6A1FD595F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{424569E1-41D7-4D08-B8A6-11D6A1FD595F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B28D2B31-98A8-4B3C-BF78-A8571DECF235}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B28D2B31-98A8-4B3C-BF78-A8571DECF235}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B28D2B31-98A8-4B3C-BF78-A8571DECF235}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B28D2B31-98A8-4B3C-BF78-A8571DECF235}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

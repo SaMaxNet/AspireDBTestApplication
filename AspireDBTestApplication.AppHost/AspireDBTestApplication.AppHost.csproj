@@ -10,11 +10,13 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AspireDBTestApplication.ApiService\AspireDBTestApplication.ApiService.csproj" />
+    <ProjectReference Include="..\AspireDBTestApplication.PeopleDbManager\AspireDBTestApplication.PeopleDbManager.csproj" />
     <ProjectReference Include="..\AspireDBTestApplication.Web\AspireDBTestApplication.Web.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Aspire.Hosting" Version="8.0.0-preview.3.24105.21" />
+    <PackageReference Include="Aspire.Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0-preview.3.24105.21" />
   </ItemGroup>
 
 </Project>
